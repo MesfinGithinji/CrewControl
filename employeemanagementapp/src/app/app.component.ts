@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Employee } from './employee';
 import { EmployeeService } from './employee.service';
 import { HttpErrorResponse } from '@angular/common/http';
+import { Employee } from './employee';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,8 @@ import { HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public employees: Employee[] | undefined;
+  public employees: Employee[] = [];
+  title: any;
 
   constructor(private employeeService: EmployeeService){}
 
@@ -20,12 +20,8 @@ export class AppComponent implements OnInit {
 
   public getEmployees(): void {
     this.employeeService.getEmployees().subscribe(
-      (response: Employee | Employee[]) => { // Use union type to handle single or array response
-        if (Array.isArray(response)) {
-          this.employees = response;
-        } else {
-          this.employees = [response]; // Convert single response to an array
-        }
+      (response: Employee[]) => {
+        this.employees = response;
         console.log(this.employees);
       },
       (error: HttpErrorResponse) => {
@@ -33,6 +29,5 @@ export class AppComponent implements OnInit {
       }
     );
   }
-
 
 }
