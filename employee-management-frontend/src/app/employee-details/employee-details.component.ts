@@ -1,12 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { EmployeeService } from '../employee.service';
+import { Employee } from '../employee.model';
 
 @Component({
   selector: 'app-employee-details',
-  standalone: true,
-  imports: [],
   templateUrl: './employee-details.component.html',
-  styleUrl: './employee-details.component.css'
+  styleUrls: ['./employee-details.component.css']
 })
-export class EmployeeDetailsComponent {
+export class EmployeeDetailsComponent implements OnInit {
+  employee: Employee | undefined;
 
+  constructor(
+    private route: ActivatedRoute,
+    private employeeService: EmployeeService
+  ) { }
+
+  ngOnInit(): void {
+    this.getEmployee();
+  }
+
+  getEmployee(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.employeeService.getEmployee(id)
+      .subscribe(employee => this.employee = employee);
+  }
 }
