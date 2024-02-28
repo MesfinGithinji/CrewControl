@@ -1,1 +1,30 @@
-<p>employee-create works!</p>
+<!-- employee-create.component.html -->
+<h2>Create Employee</h2>
+<form (submit)="createEmployee()">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="employee.name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" [(ngModel)]="employee.email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="jobTitle">Job Title:</label>
+    <input type="text" class="form-control" id="jobTitle" [(ngModel)]="employee.jobTitle" name="jobTitle" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone:</label>
+    <input type="text" class="form-control" id="phone" [(ngModel)]="employee.phone" name="phone" required>
+  </div>
+  <div class="form-group">
+    <label for="imageUrl">Image URL:</label>
+    <input type="text" class="form-control" id="imageUrl" [(ngModel)]="employee.imageUrl" name="imageUrl" required>
+  </div>
+  <div class="form-group">
+    <label for="employeeCode">Employee Code:</label>
+    <input type="text" class="form-control" id="employeeCode" [(ngModel)]="employee.employeeCode" name="employeeCode" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
