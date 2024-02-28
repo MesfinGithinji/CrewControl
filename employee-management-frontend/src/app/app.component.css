@@ -1,0 +1,27 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .employee-list {
+    margin-top: 20px;
+  }
+  
+  .employee-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .employee-list li {
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .employee-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
