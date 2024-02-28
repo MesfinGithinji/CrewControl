@@ -1,0 +1,39 @@
+/* employee-details.component.css */
+
+/* Style for the heading */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the employee details container */
+  .employee-details {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Style for individual detail items */
+  .employee-details p {
+    margin: 10px 0;
+  }
+  
+  /* Style for strong (bold) text */
+  .employee-details strong {
+    color: #333;
+  }
+  
+  /* Style for links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  a:hover {
+    color: #0056b3;
+  }
+  
