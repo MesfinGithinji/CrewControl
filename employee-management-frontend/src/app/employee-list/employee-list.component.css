@@ -1,0 +1,32 @@
+/* employee-list.component.css */
+
+/* Style for the heading */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style for list items */
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  a:hover {
+    color: #0056b3;
+  }
+  
