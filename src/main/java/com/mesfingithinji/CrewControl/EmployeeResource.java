@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/employee")
 @Tag(
         name = "CrewControl Backend",
-        description = "Here are the various HTTP Endpoints for each CRUD function"
+        description = "Here are the various HTTP Endpoints for each CRUD functionality"
 )
 public class EmployeeResource {
     private final EmployeeService employeeService;
