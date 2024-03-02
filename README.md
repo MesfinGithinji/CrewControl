@@ -1,7 +1,9 @@
 ```
 # CrewControl
 
-CrewControl is a simple CRUD (Create, Read, Update, Delete) employee management system designed to streamline the process of managing employee data within a company or organization.
+CrewControl is a simple CRUD (Create, Read, Update, Delete) 
+employee management system designed to streamline the process 
+of managing employee data within a company or organization.
 
 ## Features
 
