@@ -50,7 +50,7 @@ Once you have the project on your systen ensure that you have the appropriate de
    ```
 2. **Navigate to the Project Directory:**
    ```bash
-   cd crewControl
+   cd CrewControl
    ```
 3. **Install Dependencies:**
    - Backend:
@@ -67,7 +67,7 @@ Once you have the project on your systen ensure that you have the appropriate de
 4. **Run the Application:**
    - Backend:
      ```bash
-     java -jar target/crewcControl.jar
+     java -jar target/CrewControl.jar
      ```
    - Frontend:
      ```bash
