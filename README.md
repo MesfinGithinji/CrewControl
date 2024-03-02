@@ -1,9 +1,7 @@
-```
 # CrewControl
 
-CrewControl is a simple CRUD (Create, Read, Update, Delete) 
-employee management system designed to streamline the process 
-of managing employee data within a company or organization.
+CrewControl is a simple CRUD (Create, Read, Update, Delete) employee management system 
+designed to streamline the process of managing employee data within a company or organization.
 
 ## Features
 
@@ -42,7 +40,7 @@ To interact with CrewControl API using Postman or HTTPie, follow these steps:
 - **Updating Employees:** Send a PUT request to `/employees/{employee_id}` endpoint with the updated employee details in the request body.
 - **Deleting Employees:** Send a DELETE request to `/employees/{employee_id}` endpoint to remove an employee from the system.
 
-Once you have the projrct on your systen ensure that you have the appropriate dependencies and configurations set up in your Spring Boot project for smooth execution.
+Once you have the project on your systen ensure that you have the appropriate dependencies and configurations set up in your Spring Boot project for smooth execution.
 
 ## Setup
 
