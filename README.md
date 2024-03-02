@@ -34,11 +34,11 @@ To interact with CrewControl API using Postman or HTTPie, follow these steps:
 
 ### Interacting with the API:
 
-- **Adding Employees:** Send a POST request to the appropriate endpoint (`/employees`) with the required employee details in the request body.
-- **Viewing Employees:** Send a GET request to the `/employees` endpoint to retrieve a list of all existing employee records.
-- **Viewing Specific Employee:** Send a GET request to `/employees/{employee_id}` endpoint to retrieve details of a specific employee.
-- **Updating Employees:** Send a PUT request to `/employees/{employee_id}` endpoint with the updated employee details in the request body.
-- **Deleting Employees:** Send a DELETE request to `/employees/{employee_id}` endpoint to remove an employee from the system.
+- **Adding Employees:** Send a POST request to the `/employee/add` endpoint with the required employee details in the request body.
+- **Viewing Employees:** Send a GET request to the `/employee/all` endpoint to retrieve a list of all existing employee records.
+- **Viewing Specific Employee:** Send a GET request to the `/employee/find/{id}` endpoint to retrieve details of a specific employee using their unique Id.
+- **Updating Employees:** Send a PUT request to the `/employee/update` endpoint with the updated employee details in the request body.
+- **Deleting Employees:** Send a DELETE request to `/employee/delete/{id}` endpoint to remove an employee from the system.
 
 Once you have the project on your systen ensure that you have the appropriate dependencies and configurations set up in your Spring Boot project for smooth execution.
 
@@ -55,12 +55,12 @@ Once you have the project on your systen ensure that you have the appropriate de
 3. **Install Dependencies:**
    - Backend:
      ```bash
-     # Assuming you have Maven installed
+     # Assuming you have Maven and Java  JDK installed on your system
      mvn clean install
      ```
    - Frontend:
      ```bash
-     # Assuming you have Node.js and npm installed
+     # Assuming you have Node.js and npm installed on your system
      cd employee-management-frontend
      npm install
      ```
